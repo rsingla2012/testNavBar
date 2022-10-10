@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://kit-free.fontawesome.com/releases/latest/css/free.min.css");
+
+html,
+body {
+  height: 100%;
+  color: #ff9100;
+  justify-content: center;
+  margin: 5;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+.container-fluid {
+  height: calc(100vh - 60px);
+}
+.home {
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  border: 2px solid;
+  color: rgb(250, 243, 243);
+  animation: image 2s infinite alternate;
+}
+
+@keyframes image {
+  0% {
+    background-image: url("https://images.unsplash.com/photo-1555164250-cb45410edc7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+  }
+  100% {
+    background-image: url("https://unsplash.it/601/601");
+  }
+}
+section,
+h1 {
+  padding: 20px;
+}
+nav {
+  z-index: 999;
+}
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  position: relative;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #1a1b1b;
+}
+
+a:hover {
+  opacity: 0.5;
+  color: #ff9100;
+}
+
+a:visited {
+  color: #b87b43;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 60px;
+  background: #fff;
+}
+.logo {
+  width: "100%";
+  background: "white";
+}
+.logo img {
+  height: 60px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.login {
+  background: no-repeat 5px 5px #ff9100;
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  border-color: #ff9100;
+  border-radius: 40px;
+  color: White;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: left;
+  text-indent: 40px;
+  display: block;
+  margin: 5px;
+
+  /* Animations: */
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-property: all;
+
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-duration: 0.4s;
+  -moz-transition-property: all;
+}
+
+.login:hover {
+  background-image: url("https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login-hover.png");
+  background-position: 65px 5px;
+  text-indent: 10px;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+.breadcrumbs a {
+  color: #1a1b1b;
+  margin: 5px;
+}
